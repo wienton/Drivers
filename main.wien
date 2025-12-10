@@ -1,0 +1,15 @@
+.asm console_module {
+    source = nasm.asm
+    output = netwide
+    assembler = nasm
+    link = true
+}
+
+.comp he {
+    sources = stack.c 
+    output = hee
+}
+; .CALL he
+.CALL console_module
+
+.text "Wien Assembler Modules compiled successfully!"
